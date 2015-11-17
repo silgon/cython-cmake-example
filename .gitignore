@@ -1,0 +1,8 @@
+*~
+\#*#
+*.swp
+*.swo
+.\#*
+devel/
+build/
+*.pyc

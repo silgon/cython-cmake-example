@@ -12,15 +12,18 @@ Please see the file 'readme.rst' for further instructions.""")
 
 
 setup(
-    name = "cythoncmakeexample",
-    package_dir = {'': 'src'},
+    name = "cythoncmake",
+    # package_dir = {'': 'cythoncmake'},
+    packages=['cythoncmake'
+          ],
+
     data_files = [(get_python_lib(), glob.glob('src/*.so')),
         ('bin', ['bin/rectangle-props'])],
     author = 'Matt McCormick',
     description = 'Use the CMake build system to make Cython modules.',
     license = 'Apache',
     keywords = 'cmake cython build',
-    url = 'http://github.com/thewtex/cython-cmake-example',
+    url = 'http://github.com/silgon/cython-cmake-example',
     test_require = ['nose'],
     zip_safe = False,
     )

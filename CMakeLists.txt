@@ -29,5 +29,5 @@ find_file( NOSETESTS_EXECUTABLE nosetests )
 add_test( nosetests "${NOSETESTS_EXECUTABLE}" -v --with-xunit )
 
 # Process the CMakeLists.txt in the 'src' and 'bin' directory.
-add_subdirectory( src )
+add_subdirectory( cythoncmake )
 add_subdirectory( bin )
